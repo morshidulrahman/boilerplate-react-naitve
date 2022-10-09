@@ -4,6 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./app/screens/HomeScreen";
 import { Provider } from "react-redux";
 import { store } from "./app/Redux/store";
+import Welcomescreen from "./app/screens/Welcomescreen";
+import Purchasesection from "./app/screens/Purchasesection";
+import Shopenlive from "./app/screens/Shopenlive";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,7 +16,10 @@ export default function App() {
       <Provider store={store}>
         <TailwindProvider>
           <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen} />
+            {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
+            {/* <Stack.Screen name="welcome" component={Welcomescreen} /> */}
+            {/* <Stack.Screen name="purchase" component={Purchasesection} /> */}
+            <Stack.Screen name="shopenlive" component={Shopenlive} />
           </Stack.Navigator>
         </TailwindProvider>
       </Provider>
