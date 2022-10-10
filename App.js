@@ -7,7 +7,7 @@ import { store } from "./app/Redux/store";
 import Welcomescreen from "./app/screens/Welcomescreen";
 import Purchasesection from "./app/screens/Purchasesection";
 import Shopenlive from "./app/screens/Shopenlive";
-
+import Shirtreview from "./app/screens/Shirtreview";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -19,7 +19,8 @@ export default function App() {
             {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
             {/* <Stack.Screen name="welcome" component={Welcomescreen} /> */}
             {/* <Stack.Screen name="purchase" component={Purchasesection} /> */}
-            <Stack.Screen name="shopenlive" component={Shopenlive} />
+            {/* <Stack.Screen name="shopenlive" component={Shopenlive} /> */}
+            <Stack.Screen name="Shirtreview" component={Shirtreview} />
           </Stack.Navigator>
         </TailwindProvider>
       </Provider>
