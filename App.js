@@ -9,6 +9,7 @@ import Purchasesection from "./app/screens/Purchasesection";
 import Shopenlive from "./app/screens/Shopenlive";
 import Shirtreview from "./app/screens/Shirtreview";
 import ProductScreen from "./app/screens/ProductScreen";
+import RatingSection from "./app/screens/RatingSection";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -21,8 +22,9 @@ export default function App() {
             {/* <Stack.Screen name="welcome" component={Welcomescreen} /> */}
             {/* <Stack.Screen name="purchase" component={Purchasesection} /> */}
             {/* <Stack.Screen name="shopenlive" component={Shopenlive} /> */}
-            <Stack.Screen name="Shirtreview" component={Shirtreview} />
+            {/* <Stack.Screen name="Shirtreview" component={Shirtreview} /> */}
             {/* <Stack.Screen name="ProductScreen" component={ProductScreen} /> */}
+            <Stack.Screen name="RatingSection" component={RatingSection} />
           </Stack.Navigator>
         </TailwindProvider>
       </Provider>
