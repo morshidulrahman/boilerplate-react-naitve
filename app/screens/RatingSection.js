@@ -3,7 +3,7 @@ import { Rating, AirbnbRating } from 'react-native-ratings';
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import SafeAreaWrapper from '../configs/SafeAreaWrapper'
-import { AntDesign, Foundation } from '@expo/vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import tw from 'twrnc';
 const RatingSection = () => {
 
@@ -20,9 +20,9 @@ const RatingSection = () => {
             <View style={tw`flex-1`}>
                 <View style={tw`flex flex-row p-5 items-center mt-6`}>
                     <TouchableOpacity>
-                        <AntDesign name="arrowleft" size={28} color="#979797" />
+                        <AntDesign name="arrowright" size={30} color="#979797" />
                     </TouchableOpacity>
-                    <Text style={tw`flex-1 text-center text-xl capitalize text-[#979797]`}>Ladies Shirts Review</Text>
+                    <Text style={tw`flex-1 text-center text-xl capitalize text-[#979797]`}>Leave a Review</Text>
                 </View>
                 <View style={tw`border-b-2 border-[#2FC8B3] mx-5 pb-5`}>
                     <Rating

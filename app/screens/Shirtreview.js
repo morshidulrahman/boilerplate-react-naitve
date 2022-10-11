@@ -2,7 +2,8 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import SafeAreaWrapper from '../configs/SafeAreaWrapper'
-import { AntDesign, Foundation } from '@expo/vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Foundation from 'react-native-vector-icons/Foundation';
 import tw from 'twrnc';
 
 const Shirtreview = () => {
@@ -25,7 +26,7 @@ const Shirtreview = () => {
                 </View>
                 <View style={tw`mt-4 border-b-2 border-b-[#2FC8B3] mx-5 py-5`}>
                     <View className="flex-row">
-                        <Image source={require("./../../assets/Rectangle.png")} style={tw`w-28 h-28 rounded-xl`} />
+                        <Image source={require("./../../assets/Rectangle.png")} style={tw`w-28 h-28 rounded-xl`} resizeMode="cover" />
                         <View style={tw`mt-6`}>
                             <View style={tw`flex-row`}>
                                 <View style={tw`flex-row ml-5`}>
@@ -46,7 +47,7 @@ const Shirtreview = () => {
                 </View>
                 <View style={tw`mt-8 border py-5 px-2 border-gray-300 mx-5 rounded-lg overflow-hidden`}>
                     <View style={tw`flex-row border-b-2 border-gray-400 pb-10`}>
-                        <Image source={require("./../../assets/Ellipse29.png")} style={tw`w-[64px] h-[64px] rounded-full`} />
+                        <Image source={require("./../../assets/Ellipse29.png")} style={tw`w-[64px] h-[64px] rounded-full`} resizeMode="cover" />
                         <View>
                             <View style={tw`flex-row justify-between ml-4 w-[350px]`}>
                                 <Text style={tw`capitalize text-xl font-bold`}>alice dea</Text>
@@ -68,7 +69,7 @@ const Shirtreview = () => {
                     </View>
 
                     <View style={tw`flex-row mt-8`}>
-                        <Image source={require("./../../assets/Ellipse28.png")} style={tw`w-[64px] h-[64px] rounded-full`} />
+                        <Image source={require("./../../assets/Ellipse28.png")} style={tw`w-[64px] h-[64px] rounded-full`} resizeMode="cover" />
                         <View>
                             <View style={tw`flex-row justify-between ml-4 w-[350px]`}>
                                 <Text style={tw`capitalize text-xl font-bold`}>emila jhon</Text>
