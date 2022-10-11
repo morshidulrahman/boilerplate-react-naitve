@@ -34,22 +34,22 @@ const RatingSection = () => {
                         style={{ paddingVertical: 10 }}
                     />
                 </View>
-                <View style={tw`mx-5 mt-10`}>
+                <View style={[tw`mx-5 mt-10`, { flexGrow: 1 }]}>
                     <TextInput
 
                         style={[tw`border  rounded-lg border-gray-400 p-5 `, {
-                            height: 280,
                             textAlignVertical: 'top',
+                            height: 260,
                         }]}
                         placeholder="Write your review here.........."
                     />
                 </View>
-                <View style={[tw`items-center justify-center mt-36`, { flexGrow: 1 }]}>
-                    <TouchableOpacity style={tw`items-center justify-center h-20 w-20 rounded-full bg-[#2FC8B3]`}>
+                <View style={[tw`items-center justify-center mt-5`, {}]}>
+                    <TouchableOpacity style={tw`items-center justify-center h-20 w-20 rounded-full bg-[#2FC8B3] mb-15`}>
                         <AntDesign name="arrowright" size={30} color="white" />
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Text style={tw`text-2xl font-bold capitalize pt-24`}>skip</Text>
+                        <Text style={tw`text-2xl font-bold capitalize pb-15`}>skip</Text>
                     </TouchableOpacity>
                 </View>
             </View>
